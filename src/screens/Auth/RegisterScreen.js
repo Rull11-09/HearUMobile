@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 50, // Ajustado el padding para aumentar el espacio
-    backgroundColor: "#333", // Fondo gris oscuro
+    backgroundColor: "#222", // Fondo gris oscuro
   },
   logo: {
     width: 150, // Ajustado el tamaño del logo

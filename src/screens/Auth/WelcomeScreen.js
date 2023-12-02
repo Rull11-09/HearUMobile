@@ -17,7 +17,7 @@ const WelcomeScreen = ({ navigation }) => {
     <View style={styles.container}>
       {/* Logo centrado en la parte superior */}
       <Image
-        source={require("../../../assets/HearULogo.jpg")}
+        source={require("../../../assets/HearULogo.png")}
         style={styles.logo}
       />
 
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
-    backgroundColor: "black",
+    backgroundColor: "#222",
   },
   logo: {
     width: 100,

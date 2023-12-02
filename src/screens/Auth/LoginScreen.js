@@ -21,6 +21,11 @@ const LoginScreen = ({ navigation }) => {
     // y navegar a la siguiente pantalla si es exitoso
   };
 
+  const handleNavigateToHome = () => {
+    // Navegar directamente a la HomeScreen sin autenticación
+    navigation.navigate("Home");
+  };
+
   return (
     <View style={styles.container}>
       {/* Logo centrado en la parte superior */}
@@ -57,6 +62,10 @@ const LoginScreen = ({ navigation }) => {
       <Text style={styles.link} onPress={() => navigation.navigate("Register")}>
         ¿No tienes una cuenta? Regístrate aquí.
       </Text>
+      {/* Enlace para ir directamente a la HomeScreen sin autenticación */}
+      <Text style={styles.link} onPress={handleNavigateToHome}>
+        Ver como invitado
+      </Text>
     </View>
   );
 };
@@ -67,7 +76,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 50, // Ajustado el padding para aumentar el espacio
-    backgroundColor: "#333", // Fondo gris oscuro
+    backgroundColor: "#222", // Fondo gris oscuro
   },
   logo: {
     width: 150, // Ajustado el tamaño del logo

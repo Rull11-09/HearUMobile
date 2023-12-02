@@ -11,7 +11,7 @@ const GetStartedScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Image
-        source={require("../../../assets/HearULogo.jpg")}
+        source={require("../../../assets/HearULogo.png")}
         style={styles.logo}
       />
       <Text style={styles.title}>Best Music Rating App</Text>
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
-    backgroundColor: "black", // Fondo negro
+    backgroundColor: "#222", // Fondo negro
   },
 
   logo: {
